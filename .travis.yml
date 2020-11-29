@@ -1,6 +1,10 @@
 language: python
+install:
+  - pip install pytest
+  - pip install pytest-cov
+  - pip install coveralls
 script:
-  - python3 -m pytest
+  - python3 -m pytest --cov
 after_success:
   - coveralls
 notifications:
