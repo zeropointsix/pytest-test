@@ -1,3 +1,5 @@
 language: python
 script:
-  - pytest
+  - python3 -m pytest
+notifications:
+  email: false
