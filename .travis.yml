@@ -2,7 +2,6 @@ language: python
 install:
   - pip install pytest
   - pip install pytest-cov
-  - pip install unittest
   - pip install coveralls
 script:
   - coverage erase && coverage run -m unittest discover && coverage report -m
